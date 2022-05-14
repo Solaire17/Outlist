@@ -26,7 +26,7 @@ export default function Delete() {
 
   //verify user is correct
   async function populateProfile() {
-    const req = await fetch(`http://localhost:3001/getClothingId/${id}`, {
+    const req = await fetch(`https://outlist.herokuapp.com/getClothingId/${id}`, {
       headers: {
         "x-access-token": localStorage.getItem("token"),
       },
@@ -43,7 +43,7 @@ export default function Delete() {
 
   //call to backend to delete clothing
   const deleteClothing = (eventId) => {
-    Axios.delete(`http://localhost:3001/delete/${eventId}`);
+    Axios.delete(`https://outlist.herokuapp.com/${eventId}`);
   };
 
   return (

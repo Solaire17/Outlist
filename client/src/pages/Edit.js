@@ -25,7 +25,7 @@ export default function Edit() {
 
   //call to the backend to get current clothing information
   useEffect(() => {
-    Axios.get(`http://localhost:3001/getClothing/${id}`).then((response) => {
+    Axios.get(`https://outlist.herokuapp.com/getClothing/${id}`).then((response) => {
       setNewClothing((prevClothingData) => {
         return {
           ...prevClothingData,
@@ -59,7 +59,7 @@ export default function Edit() {
 
   //verify user is correct
   async function populateProfile() {
-    const req = await fetch(`http://localhost:3001/getClothingId/${id}`, {
+    const req = await fetch(`https://outlist.herokuapp.com/getClothingId/${id}`, {
       headers: {
         "x-access-token": localStorage.getItem("token"),
       },
@@ -87,7 +87,7 @@ export default function Edit() {
       newImage
     } = newClothing;
 
-    Axios.put(`http://localhost:3001/update/${eventId}`, {
+    Axios.put(`https://outlist.herokuapp.com/update/${eventId}`, {
       title: newTitle,
       link: newLink,
       cost: newCost,

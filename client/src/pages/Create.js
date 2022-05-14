@@ -41,7 +41,7 @@ export default function Create() {
 
   //gets user data if user token is valid
   async function populateProfile() {
-    const req = await fetch("http://localhost:3001/api/profile", {
+    const req = await fetch("https://outlist.herokuapp.com/api/profile", {
       headers: {
         "x-access-token": localStorage.getItem("token"),
       },
@@ -74,7 +74,7 @@ export default function Create() {
       size,
       image,
     } = clothing;
-    Axios.post("http://localhost:3001/createClothing", {
+    Axios.post("https://outlist.herokuapp.com/createClothing", {
       userId,
       username,
       title,

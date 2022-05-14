@@ -36,7 +36,7 @@ export default function Profile() {
 
     //verify user is loggedin
     async function populateProfile() {
-        const req = await fetch("http://localhost:3001/api/myclothes", {
+        const req = await fetch("https://outlist.herokuapp.com/api/myclothes", {
             headers: {
                 "x-access-token": localStorage.getItem("token"),
             },

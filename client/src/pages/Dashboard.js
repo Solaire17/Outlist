@@ -9,7 +9,7 @@ export default function Dashboard() {
 
   //call to backend to populate listOfClothing array
   useEffect(() => {
-    Axios.get("http://localhost:3001/getClothings").then((response) => {
+    Axios.get("https://outlist.herokuapp.com/getClothings").then((response) => {
       setListOfClothing(response.data);
     });
   }, []);
