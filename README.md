@@ -27,7 +27,7 @@
 
 4. Edit or delete your clothing item afterwards
 
-  If you go back to your profile page you can now edit that clothing item
+  If you go back to your profile page you can now edit or delete your clothing items
   <img width="960" alt="image" src="https://user-images.githubusercontent.com/57889353/168691815-29c49960-3de8-4e3d-9275-fe66f0483e95.png">
   
   **Edit**
