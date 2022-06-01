@@ -43,7 +43,7 @@ export default function Delete() {
 
   //call to backend to delete clothing
   const deleteClothing = (eventId) => {
-    Axios.delete(`https://outlist.herokuapp.com/${eventId}`);
+    Axios.delete(`https://outlist.herokuapp.com/delete/${eventId}`);
   };
 
   return (
