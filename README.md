@@ -1,4 +1,4 @@
-https://outlist.netlify.app/
+https://outlist.netlify.app/ (Not all website functionality work since functions are no longer free to host)
 
 **Outlist is an online application where User's can create a list of their favourite clothing items as well as window-shop clothing items made by other users.**
 ![image](https://user-images.githubusercontent.com/57889353/168691648-1f70d7b4-a833-42bf-b952-66374ffe7e33.png)
